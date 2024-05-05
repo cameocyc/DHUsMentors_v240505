@@ -866,6 +866,26 @@ a {
 }
 
 @media (max-width:600px) {
+  h1.w3-jumbo {
+    font-size: 44.8px !important;
+    /* 70% of 64px */
+  }
+
+  h1.w3-xxxlarge {
+    font-size: 33.6px !important;
+    /* 70% of 48px */
+  }
+
+  h3 {
+    font-size: 16.8px !important;
+    /* 70% of 24px */
+  }
+
+  h4 {
+    font-size: 14px !important;
+    /* 70% of 20px */
+  }
+
   .w3-modal-content {
     margin: 0 10px;
     width: auto !important
@@ -2034,7 +2054,7 @@ a {
 /* free buttons */
 .freebtn {
   border: #f44336;
-  outline:auto;
+  outline: auto;
   padding: 12px 16px;
   background-color: #f1f1f1;
   cursor: pointer;
@@ -2056,8 +2076,8 @@ a {
 }
 
 .freebutton {
-  background-color: white; 
-  color: #f44336; 
+  background-color: white;
+  color: #f44336;
   border: 2px solid #f44336;
 }
 
