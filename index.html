@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>THU’s Mentors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./W3.CSS Template_files/w3.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    .w3-half img:hover {
+      opacity: 1;
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="vsc-initialized" data-new-gr-c-s-check-loaded="14.1171.0" data-gr-ext-installed=""
+  cz-shortcut-listen="true">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width:100%;font-size:32px;padding-top:12px;">
+      <span class="material-symbols-outlined">
+        cancel
+      </span>
+    </a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>THU’s<br>Mentors</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRFjcUIHqtGvLFUH5jR6refglsujY41hl6vPa5Kp1DiIWt1A/viewform?usp=sf_link"
+        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">預約業師</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScsrudyjlAlnQzGuwro2e80C92sa3V1ifTkZOZOU1hrQZ_m-w/viewform?usp=sf_link"
+        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">成為業師</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZdAErbfoBkNfRKjcRAPLr6au0yzOh2tx7AZxDjGhss8jkwA/viewform?usp=sf_link"
+        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">意見信箱</a>
+      <a href="https://docs.google.com/document/d/e/2PACX-1vQ6wnWEfNeJM3LdCtMnsGd_MQdlwpm2M087MoVqrH5Hjt7IRVSMU1WaR4mAoa_aeBp3YW-MZbEHXYf6/pub"
+        onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">隱私保護</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>THU’s Mentors</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>嗨！東海校友</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>立即預約你的業師！</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+
+      <!-- Control buttons -->
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> 顯示全部</button>
+        <button class="btn" onclick="filterSelection('職場諮詢')"> 職場諮詢</button>
+        <button class="btn" onclick="filterSelection('實習機會')"> 實習機會</button>
+        <button class="btn" onclick="filterSelection('議題交流')"> 議題交流</button>
+        <button class="btn" onclick="filterSelection('心情諮詢')"> 心情諮詢</button>
+      </div>
+
+    </div>
+
+
+    <!-- The Team -->
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+
+    <div class="w3-row-padding">
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 議題交流">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team1.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>張毅然</h3>
+            <p class="w3-opacity">創新科技有限公司 產品經理</p>
+            <p>專注於推動產品創新和策略規劃，能在業師諮詢網中指導校友掌握產品管理技能。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 實習機會 心情諮詢">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team2.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>王思瑤</h3>
+            <p class="w3-opacity">美味餐飲集團 品牌經理</p>
+            <p>專業於品牌建立與市場營銷，指導校友如何有效建立和管理品牌。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 實習機會 議題交流 心情諮詢">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team3.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>李宗翰</h3>
+            <p class="w3-opacity">綠能解決方案股份有限公司 市場部經理</p>
+            <p>負責綠能市場的擴展與策略部署，提供市場分析與策略制定的專業諮詢。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 實習機會 議題交流">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team4.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>周俊傑</h3>
+            <p class="w3-opacity">健康先鋒生物科技 研發主管</p>
+            <p>主導生物科技產品的研發與創新，幫助校友了解研發流程和創新方法。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 議題交流">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team5.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>陳靜怡</h3>
+            <p class="w3-opacity">全球財經顧問公司 高級財務分析師</p>
+            <p>精於財務規劃與經濟分析，可協助校友掌握財經知識和投資策略。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 議題交流 心情諮詢">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team6.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>劉芷瑩</h3>
+            <p class="w3-opacity">智能家居科技有限公司 客戶關係經理</p>
+            <p>致力於提升客戶服務與滿意度，教導校友如何提升客戶關係管理能力。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 議題交流">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team7.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>黃大為</h3>
+            <p class="w3-opacity">高速網絡服務股份有限公司 技術支持工程師</p>
+            <p>專於解決技術問題與客戶支持，能提供IT問題解決和客戶服務的指導。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 實習機會 議題交流 心情諮詢">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team8.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>鄭雅文</h3>
+            <p class="w3-opacity">未來教育集團 教育項目協調員</p>
+            <p>推動教育創新與發展項目，為校友提供教育行業的職業發展指導。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 實習機會 議題交流 心情諮詢">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team9.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>蘇麗娟</h3>
+            <p class="w3-opacity">環保解決方案有限公司 研究主管</p>
+            <p>專注於環保技術研發與實施，分享環保行業的職場經驗和技術知識。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 議題交流 心情諮詢">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team10.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>何子庭</h3>
+            <p class="w3-opacity">高新世紀數據分析股份有限公司 資料科學家</p>
+            <p>專精於大數據分析與洞察趨勢，提供數據分析技能的學習與應用指導。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 議題交流">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team11.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>蔡依林</h3>
+            <p class="w3-opacity">未來綠色科技股份有限公司 永續發展策略經理</p>
+            <p>在永續發展領域擁有豐富經驗，協助校友理解和實施永續策略。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom filterDiv 職場諮詢 實習機會 議題交流 心情諮詢">
+        <div class="w3-light-grey">
+          <img src="./W3.CSS Template_files/team12.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>謝天華</h3>
+            <p class="w3-opacity">先進智慧物流股份有限公司 物流規劃經理</p>
+            <p>專注於物流和供應鏈管理，幫助校友理解業界職業發展趨勢並提升專業技能。</p>
+            <button class="w3-button w3-red w3-padding-large w3-hover-black">立即預約</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Services -->
+    <div class="w3-container" id="services" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>東海校友業師諮詢網</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>歡迎來到東海校友「預約業師 」聯絡平台 —— THU’s
+        Mentors，是由東海大學社會學系所創辦！如果你正在尋求職業發展的指導和支持，你來對地方了！我們這裡聚集了東海大學社會學系的校友及各行各業的專業人士，樂意分享自己豐富的經驗和實用的知識，幫助你在社會各界持續進步、茁壯成長。
+      </p>
+      <p>無論你是希望獲得專業指導，還是準備將自己的經驗傳授給後來人，這裡都有你的一席之地。立即加入我們，預約你的業師或申請成為業師吧！讓我們一起攜手，開啟一段精彩的職涯旅程。<strong>約起來，幫起來！</strong></p>
+    </div>
+    <!-- Photo grid (modal) -->
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="./W3.CSS Template_files/kitchenconcrete2.jpg" style="width:100%" onclick="onClick(this)"
+          alt="東海大學社會學系小樹屋">
+      </div>
+      <div class="w3-half">
+        <img src="./W3.CSS Template_files/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="東海大學社會學系諮商室">
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display=&#39;none&#39;">
+      <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+    <!-- Designers -->
+    <!-- <div class="w3-container" id="designers" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>The best team in the world.</p>
+      <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+        elit, sed do eiusmod tempor
+        incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p><b>Our designers are thoughtfully chosen</b>:</p>
+    </div> -->
+
+
+    <!-- Packages / Pricing Tables -->
+    <div class="w3-container" id="packages" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>成為業師/預約業師</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        想要分享你的專業知識，或是尋找職場導師的指導？無論你願意成為別人的業師，還是希望預約業師來獲得職涯上的建議，我們的平台都能滿足你的需求。加入我們，開啟你的專業成長之旅，擴展你的職業網絡，並與東海大學校友共同探索更多可能！<strong>立刻行動！讓我們一起創造美好的職業未來！</strong>
+      </p>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">
+            <h2>成為業師</h2>
+          </li>
+          <li class="w3-padding-16">
+            <h3>1. 提升影響力</h3>
+            <span class="w3-opacity">作為業師，你將有機會影響下一代專業人士，傳授你的知識與經驗。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>2. 專業網絡擴展</h3>
+            <span class="w3-opacity">加入我們的業師社群，與來自各行各業的專家建立聯繫，拓展你的專業網絡。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>3. 彈性時間安排</h3>
+            <span class="w3-opacity">自主選擇諮詢時間，根據你的日程安排靈活進行指導。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>4. 個人品牌建立</h3>
+            <span class="w3-opacity">透過分享專業知識和經驗，建立和提升你的個人品牌和市場價值。</span>
+          </li>
+
+          <li class="w3-padding-16">
+            <h3>5. 專業成長機會</h3>
+            <span class="w3-opacity">教學亦是學習的過程，通過指導他人，加深自己的專業知識和技能。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>6. 社會貢獻</h3>
+            <span class="w3-opacity">通過分享你的專業知識，為社會培養更多優秀人才，做出你的社會貢獻。
+          </li>
+          <li class="w3-padding-16">
+            <h3>7. 反饋與認可</h3>
+            <span class="w3-opacity">從學員那裡獲得直接的反饋，增強職業滿足感和自我實現。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>8. 創新交流</h3>
+            <span class="w3-opacity">在與學員的互動中，探討最新行業動態和創新趨勢，保持專業知識的前沿性。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>9. 獨特的教學平台</h3>
+            <span class="w3-opacity">支持業師以線上分享互動形式進行教學，提高教學效果。</span>
+          </li>
+
+          <li class="w3-padding-16">
+            <h3>10. 完全免費</h3>
+            <span class="w3-opacity">成為業師的申請過程完全免費，上架你的資訊也無需支付任何費用。
+            </span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a class="w3-button w3-black w3-padding-large w3-hover-red"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScsrudyjlAlnQzGuwro2e80C92sa3V1ifTkZOZOU1hrQZ_m-w/viewform?usp=sf_link">
+              <h3>立即申請成為業師</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-light-grey w3-center">
+          <li class="w3-red w3-xlarge w3-padding-32">
+            <h2>預約業師</h2>
+          </li>
+          <li class="w3-padding-16">
+            <h3>1. 專家指導</h3><span class="w3-opacity">從行業領袖和經驗豐富的專家那裡獲得一對一的專業指導。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>2. 職業規劃</h3><span class="w3-opacity">業師可以協助你制定或精進你的職業規劃，幫助你達到職業生涯的下一個里程碑。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>3. 彈性排程</h3><span class="w3-opacity">你可以根據自己的時間表靈活安排與業師的會面，確保在最需要的時候獲得支持。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>4. 個性化反饋</h3><span class="w3-opacity">獲得針對你的專業需求和問題定制的反饋和建議。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>5. 技能提升</h3><span class="w3-opacity">從業師那裡學習具體技能，這些技能對你當前或未來的職業角色至關重要。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>6. 網絡擴展</h3><span class="w3-opacity">通過業師介紹，接觸到更廣泛的專業網絡和機會。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>7. 實戰經驗分享</h3><span class="w3-opacity">聽取業師的實戰經驗，了解行業趨勢和職場生存技巧。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>8. 心理支持</h3><span class="w3-opacity">在職業發展的不同階段，獲得業師的鼓勵和心理支持，增強自信和動力。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>9. 持續學習</h3><span class="w3-opacity">與業師互動是一個持續學習的過程，有助於不斷更新專業知識，適應變化迅速的工作環境。</span>
+          </li>
+          <li class="w3-padding-16">
+            <h3>10. 免費諮詢</h3><span class="w3-opacity">與業師的所有諮詢會話都是完全免費的，無需擔心額外費用。</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a class="w3-button w3-red w3-padding-large w3-hover-black"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfRFjcUIHqtGvLFUH5jR6refglsujY41hl6vPa5Kp1DiIWt1A/viewform?usp=sf_link">
+              <h3>立即預約業師時間</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>意見信箱</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <p>
+        歡迎來你的留言！這裡不僅是一個讓你提出投訴的地方，更是一個能夠收集你的建議、鼓勵和正面反饋的多功能問卷。我們真誠希望聽到你對平台的看法和感受，因為你的每一條反饋都是我們改進的寶貴資源。無論是好的、需要改進的，還是遇到的問題，我們都歡迎你透過這裡表達出來。
+      </p>
+      <p>透過你的反饋，我們可以持續優化網站的功能和內容，提升你的使用體驗。你的參與不僅能增強我們的服務，也能加強彼此之間的聯繫。我們將妥善處理你的資訊，保護你的隱私安全。</p>
+      <p>請不吝告知，你的聲音對我們非常重要！立即透過我們的意見信箱分享你的想法。讓我們一起努力，使平台更加完善。</p>
+      <a class="w3-button w3-dark-grey w3-padding-large w3-hover-black"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeZdAErbfoBkNfRKjcRAPLr6au0yzOh2tx7AZxDjGhss8jkwA/viewform?usp=sf_link">
+        <h3>前往留言</h3>
+      </a>
+    </div>
+
+    <!-- End page content -->
+  </div>
+
+  <!-- W3.CSS Container -->
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right">Powered by <a href="https://soc.thu.edu.tw/" title="東海大學社會學系" target="_blank"
+        class="w3-hover-opacity">東海大學社會學系</a></p>
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+
+  <div id="yt_article_summary_widget_wrapper" class="yt_article_summary_widget_wrapper" style="display: none;">
+    <div id="yt_article_summary_widget" class="yt_article_summary_widget"><svg style="filter: brightness(0.8);"
+        width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <mask id="path-1-outside-1_3606_3145" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22"
+          fill="black">
+          <rect fill="white" x="1" y="1" width="22" height="22"></rect>
+          <path
+            d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z">
+          </path>
+        </mask>
+        <path
+          d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z"
+          fill="#828282"></path>
+        <path
+          d="M20.6816 10.1843C20.9588 9.34066 21.0063 8.4399 20.8192 7.57245C20.6321 6.70499 20.217 5.90134 19.6157 5.24216C19.0143 4.58298 18.2478 4.09146 17.393 3.81692C16.5382 3.54238 15.6253 3.49449 14.7459 3.67805C14.1453 3.01747 13.379 2.52468 12.524 2.24931C11.669 1.97394 10.7555 1.92571 9.87559 2.10947C8.99568 2.29324 8.18039 2.70252 7.51181 3.29608C6.84323 3.88965 6.34499 4.64654 6.06725 5.49055C5.18642 5.67292 4.3699 6.08122 3.70003 6.67426C3.03017 7.26731 2.53064 8.02413 2.25182 8.86842C1.97299 9.71271 1.92474 10.6146 2.11192 11.4832C2.2991 12.3517 2.71509 13.1562 3.31795 13.8155C3.09309 14.4899 3.01633 15.2037 3.09278 15.9095C3.16924 16.6154 3.39716 17.2971 3.76139 17.9093C4.30169 18.8351 5.12567 19.568 6.11483 20.0027C7.104 20.4373 8.20738 20.5512 9.26631 20.328C9.74353 20.8568 10.3291 21.2796 10.9844 21.5684C11.6396 21.8571 12.3495 22.0053 13.0672 22.003C14.1516 22.003 15.2081 21.6635 16.0847 21.0334C16.9612 20.4034 17.6125 19.5152 17.9449 18.4968C18.649 18.3539 19.3141 18.0649 19.8962 17.6489C20.4784 17.233 20.9642 16.6997 21.3214 16.0843C21.8585 15.1598 22.0858 14.0915 21.9709 13.032C21.856 11.9724 21.4048 10.9758 20.6816 10.1843ZM13.0798 20.6968C12.191 20.6968 11.3302 20.3894 10.6473 19.828L10.7677 19.7593L14.8029 17.4593C14.9069 17.4047 14.9935 17.3225 15.0528 17.2221C15.1121 17.1216 15.1418 17.0068 15.1386 16.8905V11.2655L16.8427 12.2405C16.8517 12.2441 16.8594 12.2501 16.865 12.2579C16.8706 12.2656 16.8739 12.2748 16.8744 12.2843V16.9343C16.876 17.4289 16.7785 17.9189 16.5875 18.3761C16.3964 18.8333 16.1156 19.2488 15.7611 19.5985C15.4067 19.9482 14.9856 20.2253 14.5222 20.4138C14.0588 20.6023 13.5621 20.6984 13.0608 20.6968H13.0798ZM4.90165 17.2593C4.46164 16.5029 4.3026 15.6189 4.45188 14.7593L4.57224 14.828L8.60749 17.128C8.70379 17.1829 8.81303 17.2118 8.92423 17.2118C9.03543 17.2118 9.14467 17.1829 9.24097 17.128L14.1758 14.3218V16.253C14.1797 16.2608 14.1817 16.2694 14.1817 16.278C14.1817 16.2867 14.1797 16.2953 14.1758 16.303L10.0962 18.628C9.66403 18.8748 9.18685 19.0352 8.69188 19.0999C8.19692 19.1647 7.69387 19.1326 7.21148 19.0055C6.72909 18.8784 6.27681 18.6587 5.88048 18.3591C5.48415 18.0595 5.15154 17.6858 4.90165 17.2593ZM3.83741 8.5843C4.28764 7.82089 4.99655 7.23878 5.83919 6.94055V11.6718C5.83595 11.7857 5.86434 11.8983 5.92128 11.9975C5.97823 12.0966 6.06156 12.1785 6.16227 12.2343L11.0717 15.028L9.36766 16.003C9.34918 16.0092 9.32914 16.0092 9.31065 16.003L5.23106 13.678C4.36041 13.1812 3.72487 12.3642 3.46364 11.4059C3.20242 10.4476 3.33682 9.42624 3.83741 8.56555V8.5843ZM17.8563 11.7968L12.9278 8.9718L14.6319 8.00305C14.6403 7.99741 14.6502 7.99439 14.6604 7.99439C14.6705 7.99439 14.6805 7.99741 14.6889 8.00305L18.7685 10.328C19.3915 10.684 19.8992 11.2072 20.2325 11.8368C20.5659 12.4664 20.7111 13.1764 20.6514 13.8843C20.5916 14.5921 20.3294 15.2687 19.8951 15.8352C19.4608 16.4017 18.8724 16.8349 18.1983 17.0843V12.353C18.1946 12.2391 18.1612 12.1281 18.1013 12.0306C18.0414 11.9332 17.957 11.8527 17.8563 11.7968ZM19.554 9.2968L19.4336 9.2218L15.4047 6.9093C15.3047 6.84846 15.1896 6.81624 15.0721 6.81624C14.9547 6.81624 14.8395 6.84846 14.7396 6.9093L9.8111 9.71555V7.75305C9.8061 7.7445 9.80346 7.7348 9.80346 7.72492C9.80346 7.71505 9.8061 7.70535 9.8111 7.6968L13.897 5.37805C14.5222 5.02257 15.2371 4.85003 15.958 4.88059C16.6789 4.91115 17.3762 5.14356 17.9682 5.55064C18.5601 5.95772 19.0225 6.52265 19.301 7.17939C19.5796 7.83614 19.663 8.55755 19.5413 9.2593L19.554 9.2968ZM8.87989 12.7218L7.1695 11.753C7.15339 11.7405 7.1422 11.7228 7.13782 11.703V7.06555C7.13785 6.35289 7.34371 5.65499 7.73128 5.0536C8.11885 4.45222 8.67209 3.97224 9.32619 3.6699C9.98029 3.36756 10.7082 3.25537 11.4246 3.34647C12.141 3.43757 12.8162 3.7282 13.3712 4.1843L13.2636 4.25305L9.21563 6.55305C9.11158 6.60765 9.02504 6.68981 8.96573 6.79029C8.90642 6.89076 8.87669 7.00557 8.87989 7.1218V12.7218ZM9.80476 10.753L11.9966 9.50305L14.1948 10.753V13.253L11.9966 14.503L9.79843 13.253L9.80476 10.753Z"
+          stroke="#828282" stroke-width="0.2" mask="url(#path-1-outside-1_3606_3145)"></path>
+      </svg></div>
+    <div id="yt_article_summary_close_button" class="yt_article_summary_close_button">×</div>
+  </div>
+</body>
+
+
+</html>
