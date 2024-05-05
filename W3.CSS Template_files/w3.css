@@ -876,16 +876,6 @@ a {
 
   }
 
-  h3 {
-    font-size: 22px !important;
-    /* 70% of 24px */
-  }
-
-  h4 {
-    font-size: 14px !important;
-    /* 70% of 20px */
-  }
-
   .w3-modal-content {
     margin: 0 10px;
     width: auto !important
