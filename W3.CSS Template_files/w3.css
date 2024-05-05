@@ -867,17 +867,17 @@ a {
 
 @media (max-width:600px) {
   h1.w3-jumbo {
-    font-size: 44.8px !important;
-    /* 70% of 64px */
+    font-size: 50px !important;
+
   }
 
   h1.w3-xxxlarge {
-    font-size: 33.6px !important;
-    /* 70% of 48px */
+    font-size: 40px !important;
+
   }
 
   h3 {
-    font-size: 16.8px !important;
+    font-size: 22px !important;
     /* 70% of 24px */
   }
 
