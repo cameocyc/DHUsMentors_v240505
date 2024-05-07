@@ -156,7 +156,10 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button
+  -webkit-appearance: button;
+  /* For older versions of Safari and Chrome */
+  appearance: button;
+  /* Standard syntax */
 }
 
 button::-moz-focus-inner,
@@ -204,6 +207,9 @@ textarea {
 
 [type=search] {
   -webkit-appearance: textfield;
+  /* For older versions of Safari and Chrome */
+  appearance: textfield;
+  /* Standard syntax */
   outline-offset: -2px
 }
 
@@ -634,9 +640,37 @@ a {
 .w3-clear:before,
 .w3-bar:before,
 .w3-bar:after {
+  /* content: "";
+  display: table;
+  clear: both */
+  /* 原本採用table形式，當遇見每一行的卡片高度如果不一致，就會出現「高度塌陷」的現象，這會導致下一行的卡片無法正確對齊，從而形成排版上的錯位感。 */
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  /* 最小高度為100px，高度自適應 */
+}
+
+.w3-container:after,
+.w3-container:before,
+.w3-panel:after,
+.w3-panel:before,
+.w3-row:after,
+.w3-row:before,
+.w3-row-padding:after,
+.w3-row-padding:before,
+.w3-cell-row:before,
+.w3-cell-row:after,
+.w3-clear:after,
+.w3-clear:before,
+.w3-bar:before,
+.w3-bar:after {
   content: "";
   display: table;
   clear: both
+    /* 原本採用table形式，當遇見每一行的卡片高度如果不一致，就會出現「高度塌陷」的現象，這會導致下一行的卡片無法正確對齊，從而形成排版上的錯位感。 */
+    /* display: flex;
+  flex-wrap: wrap; */
+    /* 允許多行顯示 */
 }
 
 .w3-col,
@@ -1452,9 +1486,8 @@ a {
 }
 
 .w3-padding-large {
-  padding: 12px 24px;
-  margin-bottom: 24px;
-  !important
+  padding: 12px 24px !important;
+  margin-bottom: 24px !important
 }
 
 .w3-padding-16 {

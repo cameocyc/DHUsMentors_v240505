@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     height: 100vh; */
+    margin: 0;
+    background: #f4f4f4;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* 從 space-around(居中) 改為 flex-start（齊左） */
+    padding: 20px;
+}
+.card {
+  flex: 1 1 100%; /* 在小屏幕上卡片會擴展至全寬 */
+    box-sizing: border-box; /* 確保寬度計算包含邊距和內邊距 */
+    margin: 10px;
+    padding: 0px 0px 20px 0px;
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 16.6667vw; /* 螢幕寬度的六分之一 */
+    
+}
+/* 媒體查詢，當螢幕寬度大於或等於600px */
+@media (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(33.333% - 20px); /* 分為三列，每列留下邊距 */
+        min-width: calc(33.333% - 20px); /* 最小寬度同樣設定，確保布局穩定 */
+        /* 去除 max-width，或確保它不會大於 16.6667vw */
+    }
+}
+
+.photo {
+    width: 100%;
+    height: 200px;
+    background: gray;
+}
+
+.info {
+    padding: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 0;
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
